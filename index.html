@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tas de roches - متجر سيارات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+        }
+
+        .header {
+            background: #1a1a1a;
+            padding: 1.5rem 1rem;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 40px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .cars-container {
+            max-width: 1200px;
+            margin: 100px auto 40px;
+            padding: 0 20px;
+        }
+
+        .cars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .car-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .car-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .car-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 3px solid #eee;
+        }
+
+        .car-details {
+            padding: 1.2rem;
+        }
+
+        .car-title {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .car-price {
+            color: #e74c3c;
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+
+        .car-specs {
+            display: flex;
+            gap: 15px;
+            margin: 10px 0;
+            color: #666;
+        }
+
+        .spec-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .details-btn {
+            background: #2980b9;
+            color: white;
+            padding: 0.8rem;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .cars-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">tas de roches</div>
+            <div class="nav-links">
+                <a href="#" style="color: white; text-decoration: none;">العروض الخاصة</a>
+                <a href="#" style="color: white; text-decoration: none;">تواصل معنا</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cars-container">
+        <div class="cars-grid">
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8" class="car-image" alt="سيارة رياضية">
+                <div class="car-details">
+                    <h3 class="car-title">فورد موستانج 2023</h3>
+                    <div class="car-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            15,000 كم
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            2023
+                        </div>
+                    </div>
+                    <p class="car-price">320,000 ر.س</p>
+                    <button class="details-btn"><i class="fas fa-car"></i> عرض التفاصيل</button>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" class="car-image" alt="سيارة دفع رباعي">
+                <div class="car-details">
+                    <h3 class="car-title">تويوتا لاندكروزر 2022</h3>
+                    <div class="car-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            45,000 كم
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            2022
+                        </div>
+                    </div>
+                    <p class="car-price">280,000 ر.س</p>
+                    <button class="details-btn"><i class="fas fa-car"></i> عرض التفاصيل</button>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d" class="car-image" alt="سيارة سيدان">
+                <div class="car-details">
+                    <h3 class="car-title">مرسيدس E-Class 2021</h3>
+                    <div class="car-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            30,000 كم
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            2021
+                        </div>
+                    </div>
+                    <p class="car-price">190,000 ر.س</p>
+                    <button class="details-btn"><i class="fas fa-car"></i> عرض التفاصيل</button>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7" class="car-image" alt="سيارة عائلية">
+                <div class="car-details">
+                    <h3 class="car-title">هيونداي النترا 2020</h3>
+                    <div class="car-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            60,000 كم
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            2020
+                        </div>
+                    </div>
+                    <p class="car-price">85,000 ر.س</p>
+                    <button class="details-btn"><i class="fas fa-car"></i> عرض التفاصيل</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 tas de roches - جميع الحقوق محفوظة</p>
+        <p>
+            <a href="mailto:khalidkhafez@gmail.com" style="color: #ffd700; text-decoration: none;">khalidkhafez@gmail.com</a> - 
+            <a href="tel:01144075917" style="color: #ffd700; text-decoration: none;">01144075917</a> - 
+            <a href="https://wa.me/249115557789" style="color: #ffd700; text-decoration: none;">واتساب: +249115557789</a>
+        </p>
+    </footer>
+</body>
+</html>
